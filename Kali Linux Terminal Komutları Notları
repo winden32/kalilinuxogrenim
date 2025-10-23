@@ -21,4 +21,4 @@ more komutu dosyadaki fazla yazıları sayfa sayfa göstermeye yarar.
 head mesaj.txt = mesaj.txt de ki yazıları gösterir
 head -n 3 mesaj.txt = mesaj.txt yazılarının ilk 3 satırını gösterir.
 tail -n 1 mesaj.txt = mesaj.txt yazılarının son 1 satırını gösterir.
-
+grep 'mustafa' mesaj.txt = mesaj.txt nin içinde ki yazıların içinde mustafa var mı diye kontrol eder varsa getirir.
