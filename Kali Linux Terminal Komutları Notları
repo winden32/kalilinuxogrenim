@@ -22,3 +22,25 @@ head mesaj.txt = mesaj.txt de ki yazıları gösterir
 head -n 3 mesaj.txt = mesaj.txt yazılarının ilk 3 satırını gösterir.
 tail -n 1 mesaj.txt = mesaj.txt yazılarının son 1 satırını gösterir.
 grep 'mustafa' mesaj.txt = mesaj.txt nin içinde ki yazıların içinde mustafa var mı diye kontrol eder varsa getirir.
+KULLANICI EKLEME SİLME VE ŞİFRE GÜNCELLEME----
+sudo su 
+aduser mustafa kullanıcı ekler
+deluser mustafa kullanıcıyı siler ama dosyalardan silmez dosyaları kalır
+deluser mustafa --remove-home mustafa = mustafanın dosyasını da siler.
+passwd mustafa = şifreyi değiştirir.
+passwd -l mustafa = girişi kitler
+passwd -u mustafa = girişi açar
+-l = lock
+-u = unlock
+-----------------------------------------------
+addgroup bilgiislem = grup oluşturur.
+delgroup bilgiislem = grubu siler.
+getent group = grupları ve kimlerin üye olduğunu gösterir.
+usermod -a -G bilgiislem ali = aliyi bilgiislem grubuna üye yapar.
+SERVİS YÖNETİMİ -------------------------------------------------
+service --status-all = tüm servisleri gösterir.
+systemctl status procps = procps servisinin çalışıp çalışmadığını gösterir
+service procps start = servisi başlatır.
+service procps restart = servisi yeniden başlatır.
+service procps stop = servisi durdurur.
+------------------------------------------------------------------
