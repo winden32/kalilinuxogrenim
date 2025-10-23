@@ -1,2 +1,0 @@
-# kalilinuxogrenim
-kali linux öğreniyorum

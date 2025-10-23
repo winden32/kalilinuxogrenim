@@ -1,0 +1,24 @@
+# kali Linux Notları
+whoami = şu anda hangi kullanıcıyla oturum açtığını gösterir
+pwd şu anki çalıştığın dizini gösterir benimki winden
+ls dosyaları gösterir
+ls -la gizli dosyaları (. ile başlayan dosyaları gösterir)
+rm dosyayı siler. rm = deneme/test_moved.txt yazarsam deneme içinde ki test_moved.txt adlı dosyayı silecek
+chown sahipliği değiştirir.
+chmod = dosya izinlerini değiştirir.
+chgrp = dosya gruplarını değiştirir.
+sudo whoami root varmı diye kontrol eder.
+sudo = geçici root yetkisi yani normalde root yetkimiz yoksa sudo yazarak root yetkisi alabilir o satır için
+chmod 600 = sadece owner yazabilir ve okuyabilir
+chmod 644 sadece owner yazabilir diğerleri okuyabilir.
+4=read
+2=write
+1=execute
+600 yazarsak sadece owner yazabilir okuyabilir ve çalıştırabilir.
+755 yazarsak owner yazabilir okuyabilir ve çalıştırabilir, diğerleri okuyabilir ve çalıştırabilir.
+cat dosyaları gösterir, dosyalar oluşturabilir ve içine yazı yazdırabilir.
+more komutu dosyadaki fazla yazıları sayfa sayfa göstermeye yarar.
+head mesaj.txt = mesaj.txt de ki yazıları gösterir
+head -n 3 mesaj.txt = mesaj.txt yazılarının ilk 3 satırını gösterir.
+tail -n 1 mesaj.txt = mesaj.txt yazılarının son 1 satırını gösterir.
+
