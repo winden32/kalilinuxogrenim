@@ -44,3 +44,14 @@ service procps start = servisi başlatır.
 service procps restart = servisi yeniden başlatır.
 service procps stop = servisi durdurur.
 ------------------------------------------------------------------
+cp kopyalamak için.
+mv taşımak veya dosyanın ismini değiştirmek için.
+cp nin kullanımı = cp kaynak(dosya neredeyse) taşımak istenen yer.
+bin dosyasına atılan her dosyayı terminalde sadece ismini yazarak çalıştırabiliriz.
+echo $BASH_VERSION = kullandığın bashin versiyonunu gösterir.
+echo $HOSTNAME = host adını gösterir.
+echo $HOME = kullanıcnın home klasörünü gösterir.
+echo $PWD = Şu anda hangi dizinde olduğumuzu gösterir.
+echo $LANG = bilgisarın dilini gösterir.
+echo $USER = Oturumu açan kişiyi gösrerir.
+
