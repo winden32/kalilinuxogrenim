@@ -54,4 +54,80 @@ echo $HOME = kullanıcnın home klasörünü gösterir.
 echo $PWD = Şu anda hangi dizinde olduğumuzu gösterir.
 echo $LANG = bilgisarın dilini gösterir.
 echo $USER = Oturumu açan kişiyi gösrerir.
+değişkenlerde sayıyla başlanmaz.
+--
+MevcutDosyaYolu="$PWD"
+echo $MevcutDosyaYolu = bir değişken oluşturduk ve bu değişkene pwd atadım. pwd çalışma dizinini gösterir.
+--
+if [ 5 -gt 5 ]
+then
+echo "büyüklük sağlandı"
+else
+echo "eşitlik sağlanmadı"
+fi 
+-gt = ilk sayı ikinciden büyükse true döner
+-eq =sayılar birbirine eşite true döner
+-lt =  ilk sayı küçükse true döner 
+-------
+a=5 
+b=4
+c=4
+
+if [ $a -gt $b -o $b -eq $c ]
+then
+echo "başarılı"
+else
+echo "başarısız"
+fi
+burda ki if komutunda -o veya demektir iki koşuldan biri sağlandığında true döner.
+eğer ki -o yerine -a yapsaydık yani and yazsaydık ve demek olurdu. iki koşul birlikte sağlandığında true döner.
+&& ve demektir.
+|| veya demektir.
+----CASE ÖRNEĞİ----
+echo "1. Bilgisyar Adını Göster"
+echo "2. Home dizini göster"
+echo "3. Dosyaları Listele"
+read -p "yapmak istediğiniz işlemin sayısını yazın" sayi
+case $sayi in 
+1 )
+echo $HOSTNAME;;
+
+2 )
+echo $HOME;;
+
+3 )
+ls -l;;
+
+* )
+echo "yanlış seçim yaptın";;
+esac
+------DOSYA OLUŞTURMA SİLME VE KOPYALAMA UYGULAMASI-------------
+select secilen_islem in "Dosya oluştur" "Dosya Sil" "Dosya Kopyala"
+do 
+  case $secilen_islem in
+  "Dosya oluştur" )
+  read -p "Oluşturulacak Dosyanın adını girin: " dosyaadi
+  touch $dosyaadi;;
+
+  "Dosya Sil" )
+  read -p "Silinecek Dosyanın Adını Giriniz: " dosyaadi
+  rm $dosyaadi;;
+
+  "Dosya Kopyala" )
+  read -p "Kopyalanacak dosyanın adını girin: " dosyaadi
+  read -p "Hangi dosyaya kopyalanacağını yazın: " yenidosyaadi
+  cp $dosyaadi $yenidosyaadi;;
+
+  * )
+  echo "yanlış seçim yaptınız!!";;
+  esac
+----------------------------------------------------------------
+
+
+
+
+done
+---------------------
+
+
 
