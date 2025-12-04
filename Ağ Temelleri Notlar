@@ -1,0 +1,20 @@
+hub gelen veriyi huba bağlı olan her bilgisayara gönderir. güvenliği zayıf kabul edilir
+çünkü gönderilen her bilgi tüm bilgisayarlardan gözükür.
+
+switch: tüm cihazlar switche bağlanır. bilgisayar 1 veri gönderdi bu veriyi bilgisayar 2 ye göndermek istiyor
+o zaman veriyi sadece b 2 görür.
+
+router:farklı ağlar arasında veri akışını kontrol ederek güvenlik sağlar.
+birden fazla cihazın tek bir internet bağlantısını paykaşmasını mümkün kılar.
+
+access point(ap): kablosuz cihazların kablolu bir ağa bağlanamsını sağlar.
+wifi sinyalini alır ve ethernet üzerinden router veya switche aktarır.böylece kablosuz cihazlar bağlanabilir.
+ofis ve kamu alanlarında olur genelde. geniş bir alana wifi sağlamak için kullanılır.
+
+Firewall:bir ağın içindeki ve dışında ki trafik arasında ağ güvenliği sağlar.gelen giden paketleri izler.
+güvenlik kurallarına uyuyorsa kabul eder uymuyorsa reddeder.ağa giren çıkan tüm bağlantıları izler.
+
+Paket Filtreleme: En basit türde bir firewall'dur. Veri paketlerini, IP adresi, port numarası ve protokol gibi bilgilere göre filtreler.
+Durum Denetimli: Bağlantıların durumunu takip eder ve bu bilgiyi veri paketlerini filtrelemek için kullanır. Daha dinamik ve güvenilir bir koruma sağlar.
+Uygulama Katmanı (Proxy Firewall): Uygulama seviyesinde trafik kontrolü yapar. Tüm veri akışını inceleyerek daha derinlemesine bir koruma sunar.
+Next-Generation Firewall (NGFW): Geleneksel firewall özelliklerinin yanı sıra, gelişmiş tehdit önleme, entegre saldırı önleme sistemleri (IPS) ve derin paket inceleme gibi özelliklere sahiptir.
