@@ -18,3 +18,42 @@ Paket Filtreleme: En basit türde bir firewall'dur. Veri paketlerini, IP adresi,
 Durum Denetimli: Bağlantıların durumunu takip eder ve bu bilgiyi veri paketlerini filtrelemek için kullanır. Daha dinamik ve güvenilir bir koruma sağlar.
 Uygulama Katmanı (Proxy Firewall): Uygulama seviyesinde trafik kontrolü yapar. Tüm veri akışını inceleyerek daha derinlemesine bir koruma sunar.
 Next-Generation Firewall (NGFW): Geleneksel firewall özelliklerinin yanı sıra, gelişmiş tehdit önleme, entegre saldırı önleme sistemleri (IPS) ve derin paket inceleme gibi özelliklere sahiptir.
+
+Unicast iletimi, ağ üzerinde tek bir göndericiden tek bir alıcıya veri gönderimi anlamına gelir. Bu, en yaygın kullanılan iletim modudur ve internet üzerindeki çoğu veri iletimi bu şekilde gerçekleşir.
+Bir web sunucusundan bilgisayarınıza bir web sayfası yüklenmesi unicast bir iletimdir.
+Multicast
+
+Multicast iletimi, tek bir göndericiden belirli bir grup alıcıya veri gönderimi anlamına gelir. Aynı verinin birden fazla alıcıya ulaştırılması gerektiğinde verimli bir yöntemdir.
+Canlı bir video yayını, multicast iletimi kullanılarak aynı anda birçok izleyiciye ulaştırılabilir.
+Broadcast
+
+Broadcast iletişimi, ağ üzerindeki tek bir göndericiden ağdaki tüm alıcılara veri gönderimi anlamına gelir. Gönderilen verinin ağdaki her cihaza ulaşması gerektiğinde kullanılır.
+Bir ağ cihazı tarafından DHCP isteği gönderimi, genellikle broadcast iletimi kullanılarak yapılır, çünkü bu istek ağdaki tüm cihazlara ulaşmalıdır.
+
+
+Fiziksel Katman (Physical Layer): Donanım düzeyindeki iletişimi, kablolar, kartlar ve diğer fiziksel yapılar üzerinden veri aktarımını sağlar.
+
+Veri Bağlantı Katmanı (Data Link Layer): Ağ üzerindeki veri akışını düzenleyerek, verilerin doğru adreslere ulaşmasını sağlar. MAC (Media Access Control) adreslerini kullanır.
+
+Ağ Katmanı (Network Layer): Verilerin farklı ağlar arası iletimini yönetir. Bu katmanda IP adresleri ve yönlendirme işlemleri bulunur.
+
+Taşıma Katmanı (Transport Layer): Uçtan uca iletişimi yönetir ve veri aktarımının güvenilirliğini sağlar. TCP (Transmission Control Protocol) ve UDP (User Datagram Protocol) bu katmanda yer alır.
+
+Oturum Katmanı (Session Layer): İletişim oturumlarını yönetir, bağlantıların başlatılmasını ve sonlandırılmasını kontrol eder.
+
+Sunum Katmanı (Presentation Layer): Verilerin ağ üzerinden nasıl temsil edileceğini yönetir. Şifreleme ve sıkıştırma işlemleri bu katmanda gerçekleşir.
+
+Uygulama Katmanı (Application Layer): Kullanıcıların ağ üzerindeki uygulamalarla etkileşime geçebilmesini sağlar. E-posta, web tarayıcıları ve diğer uç kullanıcı uygulamaları bu katmanda yer alır.
+
+Ağ Arayüzü Katmanı (Network Interface Layer): Fiziksel ve veri bağlantı katmanlarının işlevlerini birleştirir ve donanım üzerinden veri iletimini sağlar.
+İnternet Katmanı (Internet Layer): Ağ katmanına karşılık gelir ve IP adreslerini kullanarak verilerin yönlendirilmesini sağlar.
+Taşıma Katmanı (Transport Layer): OSI modelindeki gibi uçtan uca iletişimi yönetir ve TCP ile UDP protokollerini içerir.
+Uygulama Katmanı (Application Layer): OSI modelindeki oturum, sunum ve uygulama katmanlarının işlevlerini birleştirir. Kullanıcıların ağ uygulamalarıyla etkileşimini sağlar.
+
+SNMP:  Simple Network Management Protocol(SNMP),  TCP/IP protokol paketini kullanarak ağ cihazlarını(router,switch vb.) yönetmek için kullanılan bir çerçevedir.
+SMTP: eposta almak ve göndermek için kullanılır.
+DNS: DNS de alan adlarını ip ye çevirerek internet kaynaklarına erişim sağlar.
+TELNET : yerel bilgisayar ile uzaktaki bilgisayar arasında terminal bağlantısı kurmayı sağlar.
+SSH: telnet ile aynı tek farkı iki yönde şifreleyerek koruma sağlar.
+FTP: Dosyaları bir bilgisayardan farklı bir bilgisayara göndermek için kullanılır.
+
