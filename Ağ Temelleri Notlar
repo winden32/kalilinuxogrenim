@@ -57,3 +57,9 @@ TELNET : yerel bilgisayar ile uzaktaki bilgisayar arasında terminal bağlantıs
 SSH: telnet ile aynı tek farkı iki yönde şifreleyerek koruma sağlar.
 FTP: Dosyaları bir bilgisayardan farklı bir bilgisayara göndermek için kullanılır.
 
+OWASP TOP 10: Web uygulamalarındaki en kritik güvenlik zafiyetlerini sıralayan bir liste.
+
+CVE (Common Vulnerabilities and Exposures): Herkese açık, bilinen güvenlik zafiyetlerini ve açıklarını tanımlayan bir dizindir.
+
+CVSS (Common Vulnerability Scoring System): Güvenlik zafiyetlerinin şiddetini ölçmek için kullanılan bir puanlama sistemidir.
+
