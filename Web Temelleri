@@ -7,3 +7,36 @@ OPTIONS	Bir kaynağın hangi HTTP metodlarını desteklediğini sorgulamak için
 PATCH	Bir kaynağın bir kısmını güncellemek için kullanılır.
 CONNECT	İstemci ile sunucu arasında tünel kurmak için kullanılır.
 TRACE	İsteğin sunucuya ulaşma yolunu test etmek için kullanılır.
+
+DURUM KODLARI -----------
+100	Devam
+101	Protokolleri Değiştir
+200	Başarılı
+201	Oluşturuldu
+202	Kabul Edildi
+203	Yetkili Olmayan Bilgi
+404	Bulunamadı: İstenen kaynak sunucuda bulunamadı.
+500	İç Sunucu Hatası: Sunucu, isteği işlerken bir hata ile karşılaştı.
+301	Kalıcı Olarak Taşındı: İstenen kaynak kalıcı olarak yeni bir URL'ye taşındı.
+-------------------------------
+A	Bir alan adını bir IPv4 adresine çevirir.
+AAAA	Bir alan adını bir IPv6 adresine çevirir.
+CNAME	Bir alan adını başka bir alan adına yönlendirir (Canonical Name).
+MX	Bir alan adı için e-posta sunucusunun adresini belirtir (Mail Exchange).
+NS	Bir alan adı için ad sunucularını (name servers) belirtir, yani DNS kayıtlarının nerede olduğunu gösterir.
+PTR	Bir IP adresini alan adına çevirir (ters DNS lookup için kullanılır).
+SOA	DNS bölgesi hakkında genel bilgi verir (Start of Authority) ve DNS bölgesinin yetkili olduğu alan ile ilgili yönetimsel bilgiler içerir.
+TXT	Alan adı ile ilişkili herhangi bir metni saklamak için kullanılır, genellikle doğrulama ve politika ifadeleri (örneğin, SPF kayıtları) için kullanılır.
+SRV	Belirli bir hizmetin, protokolün ve domain'in hangi sunucular üzerinde çalıştığını tanımlar. Örneğin, SIP hizmetleri veya LDAP dizin erişimi için kullanılır.
+SPF	Bir alan adından e-postaların hangi sunucular aracılığıyla gönderilebileceğini tanımlar, e-posta spoofing ve spam'i önlemek için kullanılır.
+---------------------------------
+A	Bir alan adını bir IPv4 adresine çevirir.
+AAAA	Bir alan adını bir IPv6 adresine çevirir.
+CNAME	Bir alan adını başka bir alan adına yönlendirir (Canonical Name).
+MX	Bir alan adı için e-posta sunucusunun adresini belirtir (Mail Exchange).
+NS	Bir alan adı için ad sunucularını (name servers) belirtir, yani DNS kayıtlarının nerede olduğunu gösterir.
+PTR	Bir IP adresini alan adına çevirir (ters DNS lookup için kullanılır).
+SOA	DNS bölgesi hakkında genel bilgi verir (Start of Authority) ve DNS bölgesinin yetkili olduğu alan ile ilgili yönetimsel bilgiler içerir.
+TXT	Alan adı ile ilişkili herhangi bir metni saklamak için kullanılır, genellikle doğrulama ve politika ifadeleri (örneğin, SPF kayıtları) için kullanılır.
+SRV	Belirli bir hizmetin, protokolün ve domain'in hangi sunucular üzerinde çalıştığını tanımlar. Örneğin, SIP hizmetleri veya LDAP dizin erişimi için kullanılır.
+SPF	Bir alan adından e-postaların hangi sunucular aracılığıyla gönderilebileceğini tanımlar, e-posta spoofing ve spam'i önlemek için kullanılır.
