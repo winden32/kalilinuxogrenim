@@ -1,0 +1,9 @@
+GET	Bir kaynağı almak için kullanılır; URL ile belirtilen kaynağın içeriğini döndürür.
+POST	Sunucuya veri göndermek için kullanılır; genellikle form verilerini gönderirken kullanılır.
+PUT	Belirli bir kaynağı oluşturmak veya mevcut bir kaynağı güncellemek için kullanılır.
+DELETE	Belirli bir kaynağı silmek için kullanılır.
+HEAD	GET benzeridir, ancak kaynağın kendisi yerine başlıkları (headers) döndürür.
+OPTIONS	Bir kaynağın hangi HTTP metodlarını desteklediğini sorgulamak için kullanılır.
+PATCH	Bir kaynağın bir kısmını güncellemek için kullanılır.
+CONNECT	İstemci ile sunucu arasında tünel kurmak için kullanılır.
+TRACE	İsteğin sunucuya ulaşma yolunu test etmek için kullanılır.
