@@ -9,15 +9,40 @@ CONNECT	İstemci ile sunucu arasında tünel kurmak için kullanılır.
 TRACE	İsteğin sunucuya ulaşma yolunu test etmek için kullanılır.
 
 DURUM KODLARI -----------
-100	Devam
-101	Protokolleri Değiştir
-200	Başarılı
-201	Oluşturuldu
-202	Kabul Edildi
-203	Yetkili Olmayan Bilgi
-404	Bulunamadı: İstenen kaynak sunucuda bulunamadı.
-500	İç Sunucu Hatası: Sunucu, isteği işlerken bir hata ile karşılaştı.
-301	Kalıcı Olarak Taşındı: İstenen kaynak kalıcı olarak yeni bir URL'ye taşındı.
+1xx – Bilgilendirme
+100 Continue – İstemci isteğini sürdürebilir.
+101 Switching Protocols – Sunucu, protokol değiştirme isteğini kabul etti.
+102 Processing – İstek işleniyor (WebDAV).
+103 Early Hints – Sunucu erken başlık bilgileri gönderebilir.
+
+2xx – Başarılı
+200 OK – İstek başarılı.
+201 Created – Kaynak başarıyla oluşturuldu.
+202 Accepted – İstek kabul edildi, henüz işlenmedi.
+203 Non-Authoritative Information – Yetkili olmayan bilgi.
+204 No Content – Başarılı; döndürülecek içerik yok.
+205 Reset Content – Başarılı; istemci belge görünümünü sıfırlamalı.
+
+3xx – Yönlendirme
+301 Moved Permanently – Kaynak kalıcı olarak taşındı.
+302 Found – Kaynak geçici olarak taşındı.
+303 See Other – Yanıt başka bir URI’da (GET ile alınır).
+304 Not Modified – Kaynak değişmedi; önbellek kullanılabilir.
+307 Temporary Redirect – Geçici yönlendirme; yöntem değişmez.
+
+4xx – İstemci Hataları
+400 Bad Request – Hatalı istek.
+401 Unauthorized – Yetkilendirme gerekiyor.
+403 Forbidden – Sunucu isteği reddediyor.
+404 Not Found – Kaynak bulunamadı.
+405 Method Not Allowed – İstenen yöntem kullanılamaz.
+
+5xx – Sunucu Hataları
+500 Internal Server Error – Sunucu hatası.
+501 Not Implemented – Sunucu isteği desteklemiyor.
+502 Bad Gateway – Ara sunucu geçersiz yanıt aldı.
+503 Service Unavailable – Sunucu hizmet dışı.
+504 Gateway Timeout – Ara sunucu zamanında yanıt alamadı.
 -------------------------------
 A	Bir alan adını bir IPv4 adresine çevirir.
 AAAA	Bir alan adını bir IPv6 adresine çevirir.
